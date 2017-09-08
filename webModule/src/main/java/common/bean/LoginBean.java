@@ -9,7 +9,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
-import beans.LoginEJB;
+import beans.LoginEJBRemote;
 
 @ManagedBean
 @SessionScoped
@@ -20,8 +20,8 @@ public class LoginBean implements Serializable{
 	private String login;
 	private String pass;
 	private String msj;
-	@EJB
-	private LoginEJB loginEJB;
+	@EJB(lookup = "java:global/ejbModule/LoginEJB!beans.LoginEJBRemote")
+	LoginEJBRemote loginEJB;
 	
 	public String getLogin() {
 		return login;
