@@ -3,7 +3,7 @@
   <parent>
     <groupId>tsi2</groupId>
     <artifactId>project</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <artifactId>webModule</artifactId>
   <packaging>war</packaging>
@@ -13,7 +13,7 @@
   	<dependency>
 		<groupId>tsi2</groupId>
 		<artifactId>ejb</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</dependency>
     <!-- JUnit -->
     <dependency>
@@ -64,10 +64,17 @@
 			<artifactId>maven-compiler-plugin</artifactId>
 			<version>2.3.1</version>
 			<configuration>
-				<source>1.7</source>
-				<target>1.7</target>
+				<source>1.8</source>
+				<target>1.8</target>
 			</configuration>
 		</plugin>
+<!-- 		<plugin> -->
+<!-- 			<artifactId>maven-war-plugin</artifactId> -->
+<!-- 			<version>2.4</version> -->
+<!-- 			<configuration> -->
+<!-- 				<failOnMissingWebXml>false</failOnMissingWebXml> -->
+<!-- 			</configuration> -->
+<!-- 		</plugin> -->
 	</plugins>
   </build>
 </project>

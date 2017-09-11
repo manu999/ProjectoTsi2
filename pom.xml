@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tsi2</groupId>
   <artifactId>project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>principal</name>
   <modules>
-  	<module>jpaModule</module>
-  	<module>ejb</module>
-  	<module>webModule</module>
+  	<module>earModule</module>
+<!--   	<module>ejb</module> -->
+<!--   	<module>webModule</module> -->
   </modules>
   
 <!--    <profiles> -->

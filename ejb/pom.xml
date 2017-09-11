@@ -3,7 +3,7 @@
   <parent>
     <groupId>tsi2</groupId>
     <artifactId>project</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <artifactId>ejb</artifactId>
   <name>ejbModule</name>
@@ -17,9 +17,40 @@
 	</dependency>
 	
 	<dependency>
-		<groupId>tsi2</groupId>
-		<artifactId>jpaModule</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+		<groupId>javax.persistence</groupId>
+		<artifactId>persistence-api</artifactId>
+		<version>1.0.2</version>
+		<scope>provided</scope>
+	</dependency>
+	<!-- Postgres -->
+	<dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>9.4-1204-jdbc42</version>
+	    <scope>provided</scope>
 	</dependency>
   </dependencies>
+  
+  <build>
+    <finalName>practico</finalName>
+    
+    <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.1</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+		</plugin>
+<!-- 		<plugin> -->
+<!-- 			<artifactId>maven-war-plugin</artifactId> -->
+<!-- 			<version>2.4</version> -->
+<!-- 			<configuration> -->
+<!-- 				<failOnMissingWebXml>false</failOnMissingWebXml> -->
+<!-- 			</configuration> -->
+<!-- 		</plugin> -->
+	</plugins>
+  </build>
 </project>

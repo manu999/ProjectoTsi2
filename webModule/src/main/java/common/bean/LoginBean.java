@@ -9,7 +9,9 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
-import beans.LoginEJBRemote;
+import beans.ValidatorRemote;
+
+//import beans.LoginEJBRemote;
 
 @ManagedBean
 @SessionScoped
@@ -20,8 +22,10 @@ public class LoginBean implements Serializable{
 	private String login;
 	private String pass;
 	private String msj;
-	@EJB(lookup = "java:global/ejbModule/LoginEJB!beans.LoginEJBRemote")
-	LoginEJBRemote loginEJB;
+//	@EJB(lookup = "java:global/ejbModule/LoginEJB!beans.LoginEJBRemote")
+	
+	@EJB
+	ValidatorRemote validatorEJB;
 	
 	public String getLogin() {
 		return login;
@@ -46,7 +50,7 @@ public class LoginBean implements Serializable{
 	public String validateUsernamePassword() {
 //		boolean valid = "asd".equals(login) && "asd".equals(pass);
 //		boolean valid = LoginDAO.validate(login, pass);
-		boolean valid = loginEJB.LoginEJB(login, pass);
+		boolean valid = validatorEJB.validate(login, pass);
 		if (valid) {
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("username", login);
