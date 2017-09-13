@@ -9,7 +9,7 @@
   	<module>ejb</module>
   	<module>webModule</module>
   	<module>earModule</module>
-  </modules>
+  </modules> 
   
 <!--    <profiles> -->
 <!-- 	<profile> -->
