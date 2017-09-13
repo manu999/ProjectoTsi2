@@ -7,7 +7,7 @@
   </parent>
   <artifactId>earModule</artifactId>
   <packaging>ear</packaging>
-  <name>ear</name>
+  <name>earModule</name>
   <dependencies>
   	<dependency>
   		<groupId>tsi2</groupId>
