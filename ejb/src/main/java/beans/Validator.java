@@ -19,7 +19,7 @@ public class Validator implements ValidatorRemote, ValidatorLocal {
     
     public boolean validate(String login, String pass) { 
         System.out.println("EJB LOGIN");
-        boolean ret = true;
+        boolean ret = "asd".equals(login) && "asd".equals(pass);
         //LoginDAO.validate(login, pass);
 
 //		try {
