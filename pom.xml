@@ -6,9 +6,9 @@
   <packaging>pom</packaging>
   <name>principal</name>
   <modules>
+  	<module>ejb</module>
+  	<module>webModule</module>
   	<module>earModule</module>
-<!--   	<module>ejb</module> -->
-<!--   	<module>webModule</module> -->
   </modules>
   
 <!--    <profiles> -->

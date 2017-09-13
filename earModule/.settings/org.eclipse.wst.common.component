@@ -2,7 +2,7 @@
     <wb-module deploy-name="earModule-0.0.2-SNAPSHOT">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
-        <dependent-module archiveName="webModule-0.0.2-SNAPSHOT.war" deploy-path="/" handle="module:/resource/webModule/webModule">
+        <dependent-module archiveName="webModule-0.0.2-SNAPSHOT.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/tsi2/webModule/0.0.2-SNAPSHOT/webModule-0.0.2-SNAPSHOT.war">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>
